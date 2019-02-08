@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>Circuitos Consultora</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='style/style.css' rel='stylesheet' type='text/css'>
+<link href='style/estilo.css' rel='stylesheet' type='text/css'>
+
+
+<body onload="sizeChange()">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <!--<a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>-->
+    <img class="w3-image" src="circuitos.png" >
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a  class="w3-bar-item w3-boton" onclick="seleccion('Macri')">Macri</a>
+      <a  class="w3-bar-item w3-boton" onclick="seleccion('Vidal')">Vidal</a>
+      <a  class="w3-bar-item w3-boton" onclick="seleccion('F. de Kirchner')">F. de Kirchner</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <div id="contenedor">
+  </div>
+  <!--<img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">-->
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+
+     <!--<img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">-->
+    </div>
+
+    <div class="w3-col m12 w3-padding-large">
+        <h3 class="w3-center" id="cand" style="margin-top: 33px;">Macri</h3>
+      <div class="panel">
+        
+        <span class="chart" data-percent="31">
+        <span class="percent"></span>
+        <div class="label">Positiva</div>
+        </span>
+
+        <span class="chartNegativo" data-percent="59">
+          <span class="percent"></span>
+        <div class="label">Negativa</div>
+        </span>
+
+        <span class="chartNosabe" data-percent="9">
+            <span class="percent"></span>
+          <div class="label">NS/NC</div>
+        </span>
+      </div>
+
+      
+
+      <h1 class="w3-center">Análisis de la Imagen de los principales referentes políticos.</h1><br>
+      <h3 class="w3-center"></h3>
+      <p class="w3-large w3-text-grey w3-hide-medium">La imagen positiva del Presidente Mauricio Macri es del 31,1% y la imagen negativa es del 59,7%. Cuando analizamos la ubicación territorial del comportamiento de esta variable, observamos que en la Primera Sección la imagen positiva es del 31,3%, mientras que la imagen negativa es del 59,8%. En la Tercera Sección, la imagen positiva de Mauricio Macri es del 22,8% y la negativa es 71,9%. En el Interior de la Provincia de Buenos Aires, la imagen positiva es del 40,9% y la imagen negativa es del 45,3%.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Es en la Tercera Sección donde el Presidente obtiene la mayor calificación en términos de imagen negativa y es en el Interior de la provincia donde obtiene mayor imagen positiva.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">El análisis de la imagen de la Gobernadora María Eugenia Vidal, arroja como resultado una imagen positiva de 37,5% y una imagen negativa del 46,6%. Cuando miramos este comportamiento en el territorio bonaerense vemos que en la Primera Sección la imagen positiva es del 36,6% y la imagen negativa es del 48,7%. En la Tercera Sección la imagen positiva es del 24,3% y la negativa del 60%. Mientras que en el Interior de la Provincia la imagen positiva es del 54,4% y la negativa es del 28,9%.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">De manera similar a la imagen del Presidente Mauricio Macri, es en el Interior de la Provincia de Buenos Aires donde la Gobernadora María Eugenia Vidal obtiene el mayor porcentaje de imagen positiva y es en la Tercera Sección donde la imagen negativa es más alta.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Respecto a la imagen de la ex Presidenta Cristina F. de Kirchner, la imagen positiva es del 38,1% y la imagen negativa del 49,2%. En la Primera Sección la imagen positiva es del 38,1% y la negativa es del 51,6%. En la Tercera Sección, la imagen positiva de Cristina F. de Kirchner es del 50,8% y la negativa es del 37,9%. Mientras que en el Interior de la Provincia la imagen positiva es del 23,3% y la negativa del 60%.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">De manera inversa a la imagen del Presidente Mauricio Macri y de la Gobernadora María Eugenia Vidal, el mayor porcentaje de imagen positiva la ex Presidenta lo obtiene en la Tercera Sección y en el Interior de la Provincia obtiene el mayor porcentaje de imagen negativa.</p>
+    </div>
+  </div>
+
+  
+
+  
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  
+
+</footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/topojson.v1.min.js"></script>
+<script src="js/mapa.js"></script>
+
+<script>
+
+  function seleccion(parametro){
+    //d3.select("#contenedor").html(null);
+    if (parametro == 'Macri'){
+      candidato = parametro;
+      Animar();
+
+    }else if(parametro =='Vidal'){
+
+      candidato = parametro;
+      Animar();
+    }else if(parametro=='F. de Kirchner'){
+
+      candidato = parametro;
+      Animar();
+    }
+  }
+  candidato='Macri';
+  //window.onload = playAnimation();
+  
+
+  $(function() {
+		$('.chart').easyPieChart({
+      lineWidth: 8,
+			easing: 'easeOutBounce',
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+      } 
+         
+    });
+    
+    $('.chartNegativo').easyPieChart({
+      lineWidth: 8,
+			easing: 'easeOutBounce',
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+      } 
+         
+    });
+    
+    $('.chartNosabe').easyPieChart({
+      lineWidth: 8,
+			easing: 'easeOutBounce',
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+      } 
+         
+		});
+		   
+   
+  });
+  
+  function valorPosCandidato(positivo){
+    var chart = window.chart = $('.chart').data('easyPieChart');
+   
+      chart.update(positivo);
+    //Color
+    $('.chart').data('easyPieChart').options.barColor = '#08519c'; 
+   
+    }
+
+    function valorNegCandidato(positivo){
+      var chart = window.chart = $('.chartNegativo').data('easyPieChart');
+     
+      chart.update(negativo);
+      $('.chartNegativo').data('easyPieChart').options.barColor = '#d62728'; 
+    }
+
+    function valorNoCandidato(nosabe){
+      var chart = window.chart = $('.chartNosabe').data('easyPieChart');
+      
+      chart.update(nosabe);
+      $('.chartNosabe').data('easyPieChart').options.barColor = '#ffd204'; 
+    }
+
+ 
+  
+  
+         
+
+</script>
+</html>

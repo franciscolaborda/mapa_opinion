@@ -146,7 +146,7 @@ function sizeChange() {
 
   queue()
       .defer(d3.json, "js/sudamerica.json")
-      .defer(d3.tsv, "js/datos.tsv")
+      .defer(d3.tsv, "js/data.tsv")
       .await(ready);
 
  
